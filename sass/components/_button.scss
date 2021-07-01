@@ -1,0 +1,23 @@
+.button {
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      display: inline-block;
+      color: $color-light-black;
+      background-color: $color-dark-white;
+      font-size: 1.8rem;
+      font-weight: 500;
+      font-family: $font-header;
+      padding: 1rem 2rem;
+      border-radius: 2.5rem;
+      transition: 0.3s ease;
+    }
+
+    &:hover {
+      color: $color-dark-white;
+      background-color: $color-dark-yellow;
+      transform: scale(1.05);
+    }
+  }
+}
