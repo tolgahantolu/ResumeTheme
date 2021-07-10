@@ -24,6 +24,11 @@ body {
   font-weight: 800;
   letter-spacing: 0.3rem; }
 
+.heading-secondary {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500; }
+
 .heading-sub-title {
   font-size: 1.6rem;
   color: #939393;
@@ -98,6 +103,84 @@ body {
   color: #939393; }
   .about__item:not(:first-child) {
     margin-top: 1rem; }
+
+.about__edex-timeline {
+  background-color: #1e1d1d;
+  padding: 3rem 1.5rem;
+  border: 1px solid #939393;
+  border-radius: 1rem; }
+
+.about__edex-timelineitem {
+  padding-left: 4rem;
+  padding-bottom: 5rem;
+  position: relative; }
+  .about__edex-timelineitem:last-child {
+    padding-bottom: 0; }
+  .about__edex-timelineitem::before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 7.5px;
+    background-color: #daa520; }
+
+.about__edex-dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #daa520; }
+
+.about__edex-timelinedate {
+  font-size: 1.4rem; }
+
+.about__edex-timelinetitle {
+  font-size: 2.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #daa520; }
+
+.about__edex-timelinedesc {
+  font-size: 1.8rem;
+  line-height: 1.5; }
+
+.about__skill-item:not(:first-child) {
+  margin-top: 3rem; }
+
+.about__skill-title, .about__skill-percent {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px; }
+
+.about__skill-title {
+  font-size: 1.8rem; }
+
+.about__skill-percent {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #daa520;
+  position: relative; }
+  .about__skill-percent::after {
+    content: "";
+    position: absolute;
+    bottom: -0.7rem;
+    right: 50%;
+    transform: translateX(50%);
+    width: 3rem;
+    height: 3rem;
+    background-color: #daa520;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    z-index: -555; }
+
+.about__skill-progress {
+  height: 1.5rem !important; }
+
+.about__skill-progressbar {
+  background-color: #daa520; }
 
 .header__col-1 {
   height: 5rem; }

@@ -36,4 +36,109 @@
 
     color: $color-grey;
   }
+
+  //row 2 -> education, experience col
+  &__edex {
+    &-timeline {
+      background-color: $color-light-black-2;
+      padding: 3rem 1.5rem;
+      border: 1px solid $color-grey;
+      border-radius: 1rem;
+    }
+
+    &-timelineitem {
+      padding-left: 4rem;
+      padding-bottom: 5rem;
+      position: relative;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+
+      &::before {
+        content: "";
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 7.5px;
+        background-color: $color-dark-yellow;
+      }
+    }
+
+    &-dot {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background-color: $color-dark-yellow;
+    }
+
+    &-timelinedate {
+      font-size: 1.4rem;
+    }
+
+    &-timelinetitle {
+      font-size: 2.2rem;
+      font-family: $font-header;
+      font-weight: 300;
+      color: $color-dark-yellow;
+    }
+
+    &-timelinedesc {
+      font-size: 1.8rem;
+      line-height: 1.5;
+    }
+  }
+
+  // row 3 -> skills col
+  &__skill {
+    &-item {
+      &:not(:first-child) {
+        margin-top: 3rem;
+      }
+    }
+
+    &-title,
+    &-percent {
+      font-family: $font-header;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+
+    &-title {
+      font-size: 1.8rem;
+    }
+
+    &-percent {
+      font-size: 1.5rem;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      background-color: $color-dark-yellow;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -0.7rem;
+        right: 50%;
+        transform: translateX(50%);
+        width: 3rem;
+        height: 3rem;
+        background-color: $color-dark-yellow;
+        clip-path: polygon(50% 100%, 0 0, 100% 0);
+        z-index: -555;
+      }
+    }
+
+    &-progress {
+      height: 1.5rem !important;
+    }
+
+    &-progressbar {
+      background-color: $color-dark-yellow;
+    }
+  }
 }
