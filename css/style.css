@@ -300,3 +300,43 @@ body {
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   top: 0;
   transform: rotate(-135deg); }
+
+.portfolio__item {
+  position: relative; }
+
+.portfolio__imgbox {
+  height: 30rem; }
+
+.portfolio__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transition: 0.5s ease; }
+
+.portfolio__detailsbox {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease; }
+
+.portfolio__item:hover .portfolio__detailsbox {
+  opacity: 1;
+  visibility: visible; }
+
+.portfolio__item:hover .portfolio__img {
+  opacity: 0.2; }
+
+.portfolio__name {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  position: absolute;
+  top: 2rem;
+  left: 2rem; }
+
+.portfolio__icon {
+  font-size: 4rem;
+  color: #daa520;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem; }
