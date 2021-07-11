@@ -5,6 +5,11 @@
   padding: 0;
   box-sizing: inherit; }
 
+*:focus {
+  outline: none !important;
+  border-color: #939393 !important;
+  box-shadow: none !important; }
+
 html {
   font-size: 62.5%; }
 
@@ -181,6 +186,40 @@ body {
 
 .about__skill-progressbar {
   background-color: #daa520; }
+
+.contact__icon {
+  font-size: 4rem;
+  color: #daa520; }
+
+.contact__title {
+  font-size: 2.5rem; }
+
+.contact__detail {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #939393; }
+
+.contact__form-name, .contact__form-email, .contact__form-subject, .contact__form-message {
+  width: 100%;
+  background: #1e1d1d !important;
+  border: 1px solid #939393;
+  border-radius: 1.5rem; }
+  .contact__form-name::placeholder, .contact__form-email::placeholder, .contact__form-subject::placeholder, .contact__form-message::placeholder {
+    color: #939393;
+    font-size: 1.5rem; }
+
+.contact__form-name, .contact__form-email, .contact__form-subject {
+  height: 5rem; }
+
+.footer__desc {
+  font-size: 1.5rem;
+  color: #fafaf9; }
+
+.footer__link {
+  color: #daa520;
+  font-weight: 500; }
+  .footer__link:hover {
+    color: #daa520; }
 
 .header__col-1 {
   height: 5rem; }
