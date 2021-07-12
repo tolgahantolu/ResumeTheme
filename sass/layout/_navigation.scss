@@ -5,7 +5,7 @@
     height: 6rem;
     position: fixed;
     top: 3rem;
-    right: 11rem;
+    right: 5rem;
     border-radius: 50%;
     z-index: 2000;
     text-align: center;
@@ -62,5 +62,65 @@
   &__checkbox:checked + &__button &__icon::after {
     top: 0;
     transform: rotate(-135deg);
+  }
+
+  // navigation nav
+  &__nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: $color-dark-white;
+
+    opacity: 0;
+    width: 0;
+    visibility: hidden;
+
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  &__list {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: 5rem;
+      padding: 1rem 2rem;
+      color: $color-light-black;
+      background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        $color-dark-yellow 50%
+      );
+      background-size: 220%;
+      transition: all 0.4s;
+
+      span {
+        display: inline-block;
+      }
+
+      &:hover,
+      &:active {
+        background-position: 100%;
+        color: $color-dark-white;
+        transform: translateX(1rem);
+      }
+    }
+  }
+
+  //  functionality
+  &__checkbox:checked ~ &__nav {
+    opacity: 1;
+    width: 50%;
+    visibility: visible;
   }
 }
